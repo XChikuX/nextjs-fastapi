@@ -1,2 +1,7 @@
-fastapi==0.100.1
-uvicorn[standard]==0.23.2
+charset-normalizer==3.1.0  # Needed cause of a bug in poetry
+urllib3==1.26.16  # Needed cause of a bug in poetry
+dnspython>=2.4.2
+fastapi>=0.103.0
+disposable-email-domains>=0.0.95
+pydantic[email]>=2.3.0
+hypercorn>=0.14.4
