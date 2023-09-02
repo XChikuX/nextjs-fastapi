@@ -92,7 +92,11 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello World??????????????????"}
+
+@app.get("/bro")
+async def bro():
+    return {"message": "Bro this better work..."}
 
 @app.get("/favicon.ico")
 async def favicon() -> FileResponse:
